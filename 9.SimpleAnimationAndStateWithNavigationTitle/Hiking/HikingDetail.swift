@@ -17,7 +17,10 @@ struct HikingDetail: View {
                 .resizable()
                 .aspectRatio(contentMode: self.zoomed ?  .fit : .fill)
                 .onTapGesture {
-                    zoomed.toggle()
+                    withAnimation{
+                        zoomed.toggle()
+                    }
+                  
                 }
             
             

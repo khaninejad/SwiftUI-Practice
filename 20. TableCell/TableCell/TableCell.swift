@@ -27,6 +27,17 @@ struct TableCell: View {
 
 struct TableCell_Previews: PreviewProvider {
     static var previews: some View {
-        TableCell().previewLayout(.sizeThatFits)
+        Group{
+            
+            TableCell().colorScheme(.dark) // but needs a navigation view on parent
+            
+            TableCell().previewDevice("iPhone 6s")
+            
+            TableCell().previewLayout(.sizeThatFits).environment(\.sizeCategory, .extraSmall)
+            
+            TableCell().previewLayout(.sizeThatFits).environment(\.sizeCategory, .extraExtraLarge)
+        }
+        
+       
     }
 }

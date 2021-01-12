@@ -28,6 +28,7 @@ struct BarGraph: View {
 
 struct BarView: View {
     let report : Report
+    @State private var showGraph : Bool = false
     var body: some View {
         let value = report.reveniue / 500
         let yvalue = Swift.min(value * 20 , 500)
@@ -38,8 +39,13 @@ struct BarView: View {
             
             Rectangle()
                 .fill(Color.red)
-                .frame(width: 80, height: CGFloat(yvalue))
+                .frame(width: 80, height: self.showGraph ? CGFloat(yvalue): 0.0)
                 .padding()
+                .onAppear(){
+                    withAnimation(.spring()) {
+                        self.showGraph = true
+                    }
+                }
             
             Text(report.year)
         }

@@ -11,6 +11,7 @@
 		AFFFC2B625AE3EED00918BC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFC2B525AE3EED00918BC7 /* ContentView.swift */; };
 		AFFFC2B825AE3EEF00918BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFFC2B725AE3EEF00918BC7 /* Assets.xcassets */; };
 		AFFFC2BB25AE3EEF00918BC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFFC2BA25AE3EEF00918BC7 /* Preview Assets.xcassets */; };
+		AFFFC2C425AE3EFA00918BC7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFC2C325AE3EFA00918BC7 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AFFFC2B725AE3EEF00918BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFFFC2BA25AE3EEF00918BC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFFFC2BC25AE3EEF00918BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFFC2C325AE3EFA00918BC7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				AFFFC2B725AE3EEF00918BC7 /* Assets.xcassets */,
 				AFFFC2BC25AE3EEF00918BC7 /* Info.plist */,
 				AFFFC2B925AE3EEF00918BC7 /* Preview Content */,
+				AFFFC2C325AE3EFA00918BC7 /* Card.swift */,
 			);
 			path = BasicGesture;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFFC2B625AE3EED00918BC7 /* ContentView.swift in Sources */,
+				AFFFC2C425AE3EFA00918BC7 /* Card.swift in Sources */,
 				AFFFC2B425AE3EED00918BC7 /* BasicGestureApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

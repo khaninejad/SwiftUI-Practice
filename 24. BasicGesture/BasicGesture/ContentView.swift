@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tapped : Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Card(tapped: self.tapped)
+            .gesture(TapGesture(count: 1)
+                        .onEnded({ () in
+                            self.tapped.toggle()
+                        })
+            )
     }
 }
 

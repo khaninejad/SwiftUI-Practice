@@ -16,9 +16,9 @@ extension Report{
     static func all() -> [Report]{
         
         return [
-            Report(year: "2001", reveniue: 100 ),
-            Report(year: "2005", reveniue: 60 ),
-            Report(year: "2020", reveniue: 180 )
+            Report(year: "2001", reveniue: 1000 ),
+            Report(year: "2005", reveniue: 600 ),
+            Report(year: "2020", reveniue: 1800 )
         ]
     }
 }

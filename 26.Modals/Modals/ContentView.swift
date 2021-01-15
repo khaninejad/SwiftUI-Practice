@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isPresent : Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        Button("Show Modal"){
+            isPresent.toggle()
+        }.sheet(isPresented: $isPresent){
+            Text("Hello Modal")
+        }
+            
+        
+        
     }
 }
 
